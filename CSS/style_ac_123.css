@@ -1,0 +1,433 @@
+body {
+	background-color: white; /* chaque ligne termine par ";"*/
+}
+
+nav {
+	border: 1px solid #080307;
+	height: 80px;
+	background-color: #080307;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+nav ul {
+	list-style-type: none; /* Pour supprimer les points */
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	background-color: #080307;
+	border: 0px solid #669999; /* li est un élement en bloc, occupe tout l'espace de l'element parent*/
+	width: 150px;
+	float: left;
+}
+
+nav ul li a {
+	border: 0px solid red; /* "a" est un élement "in line" et pas en bloc, on peux pas modifier la largeur*/
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none; /* Pour eliminer le soulignement du lien */
+	text-align: center;
+	height: 80px; /*Centrer le texte dans les cases*/
+	color: white;
+	font-size: 20px; /* Increase the font size */
+}
+
+nav ul li ul {
+	display: none;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul li a:hover { /* Quand on passe souris par dessus, changer couleur */
+	background-color: #d6d6d6;
+	color: #000000;
+}
+
+/* General Styles */
+/* Menu Section */
+.menu {
+	padding: 20px;
+	margin: 150px auto 100px auto;
+}
+
+.menu-container {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.menu-card {
+	position: relative;
+	width: 300px;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 12px;
+	overflow: hidden;
+	transition: transform 0.3s, box-shadow 0.3s;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Overlay Content */
+.menu-content {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	text-align: left;
+	box-sizing: border-box;
+}
+
+.menu-content h2 {
+	margin: 0 0 5px;
+	font-size: 20px;
+}
+
+.menu-content p {
+	margin: 0;
+	font-size: 14px;
+	opacity: 0.8;
+}
+
+#card-container {
+	display: flex;
+	justify-content: center;
+	gap: 20px; /* Space between cards */
+	margin: 20px auto;
+}
+
+.card {
+	border: 1px solid #ddd;
+	border-radius: 12px; /* Round the edges of the cards */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s, box-shadow 0.2s;
+	background-color: white; /* Add white background */
+}
+
+.card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+	width: 100%; /* Make images resize to fit the card width */
+	height: auto; /* Maintain aspect ratio */
+	object-fit: cover; /* Ensure the images fill the space without distortion */
+	border-top-left-radius: 12px; /* Round the top edges of the images */
+	border-top-right-radius: 12px; /* Round the top edges of the images */
+	display: block;
+	aspect-ratio: 16 / 9; /* Ensure images fit inside a 16:9 size */
+}
+
+.card .card-body {
+	margin: 10px 20px; /* Add space around the text */
+	text-align: left; /* Align the text to the left */
+	background-color: white; /* Add white background */
+	border-bottom-left-radius: 12px; /* Round the bottom edges of the card body */
+	border-bottom-right-radius: 12px; /* Round the bottom edges of the card body */
+	color: black; /* Change the text color to white */
+}
+
+/* Progress Bar Styles */
+.card .progress-bar {
+	width: 80%; /* Set the width of the progress bar */
+	height: 20px; /* Set the height of the progress bar */
+	background-color: #d0d0d0; /* Background color of the progress bar container */
+	border-radius: 10px; /* Round the edges of the progress bar container */
+	margin: 20px 0; /* Remove auto centering */
+	overflow: hidden; /* Ensure the inner bar doesn't overflow */
+	position: relative; /* Position relative for inner text */
+}
+
+.card .progress-bar .progress {
+	width: 50%; /* Set the width of the progress (can be dynamic) */
+	height: 100%; /* Ensure it fills the container height */
+	background-color: blue; /* Set the progress color to blue */
+	border-radius: 10px; /* Round the edges of the progress bar */
+	position: absolute; /* Position absolute for inner text */
+	left: 20px; /* Align to the left */
+	top: 0; /* Align to the top */
+	display: flex; /* Use flexbox for centering text */
+	align-items: center; /* Center text vertically */
+	padding-left: 10px; /* Add space between the text and the bar border */
+	color: white; /* Set text color to white */
+}
+
+#Projet {
+	border: 1px solid black;
+	margin: 100px auto 50px auto;
+	width: 90%; /* Adjust width to be responsive */
+	max-width: 920px; /* Set a maximum width */
+	padding: 0 0 20px 20px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px white; /* ombre 3D sous les cases */
+	background-color: white; /* Set background color to white */
+	text-align: left; /* Center the title */
+}
+
+.btnProjet1 {
+	border: 4px solid black;
+	margin: 20px 20px;
+	width: 90%; /* Adjust width to be responsive */
+	max-width: 800px; /* Set a maximum width */
+	height: auto; /* Adjust height to be responsive */
+	border-radius: 20px;
+	background-color: white; /* Set background color to white */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btnProjet1:hover { /* Quand on passe souris par dessus, changer couleur */
+	background-color: #d6d6d6;
+	color: #000000;
+}
+
+#Projet1, #Projet2, #Projet3 {
+	border: 4px solid black;
+	margin: 20px 20px 20px 20px;
+	width: 90%; /* Adjust width to be responsive */
+	max-width: 800px; /* Set a maximum width */
+	height: auto; /* Adjust height to be responsive */
+	border-radius: 20px;
+	background-color: white; /* Set background color to white */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px; /* Add space between the border and the text */
+}
+
+#Projet1 img, #Projet2 img, #Projet3 img {
+	width: 100%; /* Make images resize to fit the block width */
+	height: auto; /* Maintain aspect ratio */
+	object-fit: cover; /* Ensure the images fill the space without distortion */
+	border-radius: 20px; /* Round the edges of the images */
+}
+
+/* Contact Section Styles */
+.contact-section {
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 40px 20px;
+	margin-top: 40px;
+	font-family: 'Poppins', sans-serif;
+	border-top: 2px solid #444;
+}
+
+.contact-section h2 {
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+.contact-section p {
+	font-size: 16px;
+	margin-bottom: 30px;
+	opacity: 0.8;
+}
+
+/* Contact Form */
+.contact-form {
+	margin-bottom: 30px;
+}
+
+.contact-form .form-group {
+	margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	max-width: 500px;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: #222;
+	color: #fff;
+	font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+	color: #888;
+}
+
+.contact-form textarea {
+	resize: none;
+}
+
+.contact-form .form-button {
+	background-color: #444;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.contact-form .form-button:hover {
+	background-color: #555;
+	transform: scale(1.05);
+}
+
+/* Social Buttons */
+.social-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.social-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	border: 2px solid transparent;
+	border-radius: 25px;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	color: white;
+}
+
+.social-button img {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	transition: transform 0.3s ease;
+}
+
+.social-button:hover img {
+	transform: rotate(15deg) scale(1.1);
+}
+
+/* Social Button Colors */
+.social-button.discord {
+	background-color: #7289DA;
+}
+
+.social-button.instagram {
+	background-color: #E4405F;
+}
+
+.social-button.linkedin {
+	background-color: #0077B5;
+}
+
+.social-button.email {
+	background-color: #444;
+}
+
+.social-button.whatsapp {
+	background-color: #25D366;
+}
+
+/* Hover Effects */
+.social-button:hover {
+	transform: scale(1.1);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.social-button.twitter:hover {
+	background-color: #0d8ce5;
+}
+
+.social-button.instagram:hover {
+	background-color: #c1354a;
+}
+
+.social-button.linkedin:hover {
+	background-color: #005582;
+}
+
+.social-button.email:hover {
+	background-color: #222;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+	nav ul li {
+		width: 100px;
+	}
+
+	nav ul li a {
+		width: 100px;
+		font-size: 16px;
+	}
+
+	.menu-card {
+		width: 100%;
+		height: auto;
+	}
+
+	#Projet, #Projet1, #Projet2, #Projet3 {
+		width: 100%;
+		height: auto;
+	}
+
+	.btnProjet1 {
+		width: 100%;
+		height: auto;
+	}
+
+	.contact-form input,
+	.contact-form textarea {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	nav ul li {
+		width: 80px;
+	}
+
+	nav ul li a {
+		width: 80px;
+		font-size: 14px;
+	}
+
+	.menu-card {
+		width: 100%;
+		height: auto;
+	}
+
+	#Projet, #Projet1, #Projet2, #Projet3 {
+		width: 100%;
+		height: auto;
+	}
+
+	.btnProjet1 {
+		width: 100%;
+		height: auto;
+	}
+
+	.contact-form input,
+	.contact-form textarea {
+		max-width: 100%;
+	}
+}
