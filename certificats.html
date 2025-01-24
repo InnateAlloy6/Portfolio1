@@ -103,51 +103,7 @@
 
 
 
-		<section id="Projet">
-			<h1>***Projet***</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<br>
-			<p>Projet</p>
-
-			<!-- Toggle buttons -->
-			<button id="btnProjet1" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet1')">Primary</button>
-			<button id="btnProjet2" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet2')">Secondary</button>
-			<button id="btnProjet3" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet3')">Success</button>
-			<section id="Projet1">
-			  <h2>***1***</h2>
-			  <p>Content for Projet1.</p>
-			</section>
-	
-			<section id="Projet2">
-			  <h2>***2***</h2>
-			  <p>Content for Projet2.</p>
-			</section>
-	
-			<section id="Projet3">
-			  <h2>***3***</h2>
-			  <p>Content for Projet3.</p>
-			</section>
-		  </section>
-		</div>
-	
-		<!-- Script to handle toggle with animation -->
-		<script>
-		  function toggleSection(sectionId) {
-			// Get all toggleable sections
-			const toggleableSections = document.querySelectorAll("#Projet > section");
-	
-			// Hide all sections
-			toggleableSections.forEach(section => {
-			  section.classList.remove("show");
-			});
-	
-			// Show the selected section with animation
-			const sectionToShow = document.getElementById(sectionId);
-			if (sectionToShow) {
-			  sectionToShow.classList.add("show");
-			}
-		  }
-		</script>
+		
 		
 		<section class="contact-section">
 			<h2>Me contacter</h2>
@@ -167,19 +123,19 @@
 			<!-- Social Buttons -->
 			<div class="social-buttons">
 				<a href="https://discord.com/users/innatealloy6" class="social-button discord" target="_blank">
-				  <img src="IMAGES/discord.png" alt="Discord" /> Discord
+				  <img src="images/discord.png" alt="Discord" /> Discord
 				</a>
 				<a href="https://www.instagram.com/dcb_pictures?igsh=Z2pkYmVjZzBnNHNu&utm_source=qr" class="social-button instagram" target="_blank">
-				  <img src="IMAGES/Instagram.png" alt="Instagram" /> Instagram
+				  <img src="images/Instagram.png" alt="Instagram" /> Instagram
 				</a>
 				<a href="https://www.linkedin.com/in/diego-casas-barcenas-80434b272/" class="social-button linkedin" target="_blank">
-				  <img src="IMAGES/LinkedIn.webp" alt="LinkedIn" /> LinkedIn
+				  <img src="images/LinkedIn.webp" alt="LinkedIn" /> LinkedIn
 				</a>
 				<a href="mailto:diego.casas.dcb@gmail.com" class="social-button email" target="_blank">
-				  <img src="IMAGES/Gmail.png" alt="Email" /> Email
+				  <img src="images/Gmail.png" alt="Email" /> Email
 				</a>
 				<a href="https://wa.me/525516922037" class="social-button whatsapp" target="_blank">
-				  <img src="IMAGES/whats.webp" alt="WhatsApp" /> WhatsApp
+				  <img src="images/whats.webp" alt="WhatsApp" /> WhatsApp
 				</a>
 			</div>
 		  </section>
