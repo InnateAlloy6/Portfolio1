@@ -189,10 +189,12 @@ nav ul li a:hover{ /* Quand on passe souris par dessus, changer couleur */
 }
 
 #Projet1 img, #Projet2 img, #Projet3 img {
-	width: 100%; /* Make images resize to fit the block width */
+	width: 60%; /* Reduce the width of the images */
 	height: auto; /* Maintain aspect ratio */
 	object-fit: cover; /* Ensure the images fill the space without distortion */
 	border-radius: 20px; /* Round the edges of the images */
+	display: block; /* Make the images block elements */
+	margin: 0 auto; /* Center the images */
 }
 
 /* Responsive Design */
