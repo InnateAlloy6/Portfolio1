@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Acceuil </title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="CSS/style_ac_123.css">
+	<style>
+	  #Projet > section {
+		display: none;
+	  }
+	  #Projet > section.show {
+		display: block;
+	  }
+	</style>
+  </head>
+
+<body style="background-image: url('IMAGES/shiharu7.jpg'); background-size: cover; background-repeat: no-repeat;">
+	<div id="conteneur">
+		<nav>
+			<img src="IMAGES/IA6.png" alt="Logo">
+			<ul>
+				<li><a href="AccueilES.html">Inicio</a></li>
+				<li>
+					<a href="ExperiencesES.html">Proyectos</a>
+					<ul>
+						<li><a href="projets_academicES.html">Académicos</a></li>
+						<li><a href="projets_proES.html">Profesionales</a></li>
+					</ul>
+				</li>
+				<li><a href="CompetencesES.html">Habilidades</a></li>
+				<li><a href="docs/CV.pdf" download>Descargar CV</a></li>
+				<li>
+					<a href="#"><img src="IMAGES/mx.png" alt="Idioma" style="width: 20px; height: 20px;"> Idioma</a>
+					<ul>
+						<li><a href="Accueil.html"><img src="IMAGES/fr.webp" alt="Français" style="width: 20px; height: 20px;"> Français</a></li>
+			      		<li><a href="AccueilES.html"><img src="IMAGES/mx.png" alt="Español" style="width: 20px; height: 20px;"> Español</a></li>
+			      		<li><a href="AccueilEN.html"><img src="IMAGES/uk.webp" alt="English" style="width: 20px; height: 20px;"> English</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<section class="menu">
+			<div class="menu-container">
+				<a href="parcoursES.html" class="menu-card" style="background-image: url('IMAGES/test1.webp');">
+					<div class="menu-content">
+						<h2>Trayectoria</h2>
+						<p>Mi trayectoria</p>
+					</div>
+				</a>
+				<a href="certificatsES.html" class="menu-card" style="background-image: url('IMAGES/test4.jpg');">
+					<div class="menu-content">
+						<h2>Certificados</h2>
+						<p>Mis diplomas y calificaciones</p>
+					</div>
+				</a>
+				<a href="personnelES.html" class="menu-card" style="background-image: url('IMAGES/test2.webp');">
+					<div class="menu-content">
+						<h2>Personal</h2>
+						<p>Mis proyectos personales</p>
+					</div>
+				</a>
+			</div>
+		</section>
+		
+
+		<section id="card-container">
+			<div class="card" style="width: 18rem;">
+				<img src="IMAGES/jp.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Fotografía</h5>
+					<p class="card-text" style="text-align: justify;">A lo largo de mi trayectoria personal, descubrí una verdadera pasión por la fotografía, un campo que rápidamente se convirtió en una de las formas de expresión en las que mejor me desenvuelvo. Esta actividad alimenta mi creatividad y me permite capturar perspectivas únicas.</p>
+					<a href="https://www.instagram.com/dcb_pictures?igsh=Z2pkYmVjZzBnNHNu&utm_source=qr" class="btn btn-primary">DCB Pictures</a>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="IMAGES/Berylin.PNG" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">DnD</h5>
+					<p class="card-text" style="text-align: justify;">Dungeons & Dragons es un juego de rol que me permite expresar mi creatividad a través de escenarios inmersivos e interacciones sociales enriquecedoras.</p>
+					<a href="..." class="btn btn-primary">Calabozos & Dragones</a>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="IMAGES/dg1.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Diseño de Niveles</h5>
+					<p class="card-text" style="text-align: justify;">Los videojuegos ocupan un lugar importante en mi vida. Son tanto una forma de expresar mi creatividad como una oportunidad para compartir experiencias con personas de todo el mundo.</p>
+					<a href="..." class="btn btn-primary">Diseño de Niveles</a>
+				</div>
+			</div>
+		</section>
+		
+		<section id="Projet">
+			<h1>Más detalles</h1>
+		
+			<!-- Botones de cambio -->
+			<button id="btnProjet1" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet1')">Fotografía</button>
+			<button id="btnProjet2" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet2')">DnD</button>
+			<button id="btnProjet3" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet3')">Diseño de Niveles</button>
+		
+			<section id="Projet1">
+				<h2>La fotografía</h2>
+				<p style="text-align: justify;">En mi trayectoria fotográfica, comencé a los 10 años probando mi primera cámara con algunas hormigas.</p>
+				<p style="text-align: justify;">Unos años después, descubrí la fotografía urbana y comencé a tomar fotos de la Ciudad de México.</p>
+				<p style="text-align: justify;">Eventualmente, durante mis estudios en el Lycée Franco-Mexicain, tuve la oportunidad de certificarme en Canon Academy, y desarrollé un gusto por la fotografía macro y urbana.</p>
+				<p style="text-align: justify;">Hoy en día, no solo he tenido la suerte de viajar por el mundo, sino que también me gusta salir a la calle y capturar fotos interesantes de la ciudad, la gente y los objetos.</p>
+				<p style="text-align: justify;">Por mi parte, veo la fotografía como un medio para capturar una visión desde un punto de vista diferente al habitual, y encontrar un mundo y una historia distinta dentro del mismo mundo que conocemos.</p>
+		
+				<img src="IMAGES/shiharu1.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Exposición en el Gran Palacio "The Soul Trembles" por Chiharu Shiota 2025</u></em></p>
+				<img src="IMAGES/shiharu7.jpg" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Exposición en el Gran Palacio "The Soul Trembles" por Chiharu Shiota 2025</u></em></p>
+				<img src="IMAGES/jp.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Japón, Tokio, Senso-ji 2023</u></em></p>
+				<img src="IMAGES/Tokio 1.jpg" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Japón, Tokio, Tokyo Tower 2023</u></em></p>
+				<img src="IMAGES/Tokio 3.jpg" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Japón, Tokio, Tokyo Sky Tree 2023</u></em></p>
+			</section>
+		
+			<section id="Projet2">
+				<h2>Donjons et Dragons</h2>
+				<p style="text-align: justify;">Descubrí el juego de rol Donjons et Dragons por casualidad durante la pandemia, y rápidamente se convirtió en una parte importante de mi vida. Como organizador de la mesa de juego, este pasatiempo me permitió desarrollar habilidades en liderazgo, organización y gestión de grupos.</p>
+				<p style="text-align: justify;">Este juego también ha sido una fuente de desarrollo personal, ayudándome a expresar mejor mis emociones y a avivar mi creatividad. Me dio la oportunidad de diseñar mundos detallados, contar historias legendarias y crear aventuras cautivadoras. Además, Donjons et Dragons enriqueció mi vida permitiéndome hacer nuevas amistades mientras exploraba universos imaginarios.</p>
+				<img src="IMAGES/Iacedia.jpeg" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Un mapa dibujado por mí para una aventura en el mundo imaginario de Iacedia</u></em></p>
+				<img src="IMAGES/Berylin.PNG" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Un mapa dibujado con software por mí para una aventura en el mundo imaginario de Sattia</u></em></p>
+			</section>
+		
+			<section id="Projet3">
+				<h2>Los mundos digitales</h2>
+				<p style="text-align: justify;">Desde mi infancia, mi descubrimiento de los mundos virtuales despertó una fascinación por el universo digital. Con el tiempo, comprendí que los videojuegos no solo son una forma de entretenimiento, sino también una forma de expresión creativa y una herramienta poderosa para conectar con personas de todo el mundo.</p>
+				<p style="text-align: justify;">Estos universos me ofrecieron la oportunidad de diseñar mis propios niveles, acertijos, estrategias y creaciones, estimulando mi imaginación y mi espíritu de innovación.</p>
+		
+				<img src="IMAGES/dg1.png" class="card-img-top" alt="...">
+				<img src="IMAGES/dg2.png" class="card-img-top" alt="...">
+				<img src="IMAGES/dg3.png" class="card-img-top" alt="...">
+				<img src="IMAGES/dg4.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Algunas de mis creaciones de niveles en el juego Duck Game</u></em></p>
+				<img src="IMAGES/strat.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Diseño de una estrategia en el juego No Plan B</u></em></p>
+				<img src="IMAGES/Mine1.png" class="card-img-top" alt="...">
+				<img src="IMAGES/Mine2.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Creación de estructuras en Minecraft para un cliente canadiense</u></em></p>
+			</section>
+		</section>
+		
+		
+	
+		<!-- Script to handle toggle with animation -->
+		<script>
+		  function toggleSection(sectionId) {
+			// Get all toggleable sections
+			const toggleableSections = document.querySelectorAll("#Projet > section");
+	
+			// Hide all sections
+			toggleableSections.forEach(section => {
+			  section.classList.remove("show");
+			});
+	
+			// Show the selected section with animation
+			const sectionToShow = document.getElementById(sectionId);
+			if (sectionToShow) {
+			  sectionToShow.classList.add("show");
+			}
+		  }
+		</script>
+		
+		<section class="contact-section">
+			<h2>Contactarme</h2>
+			<p>¡Si quieres enviarme un mensaje, es por aquí!</p>
+		  
+			<!-- Formulario de mensaje -->
+			<form class="contact-form" action="#" method="POST">
+				<div class="form-group">
+					<input type="text" name="name" placeholder="Tu nombre" required />
+				</div>
+				<div class="form-group">
+					<textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+				</div>
+				<button type="submit" class="form-button">Enviar</button>
+			</form>
+		  
+			<!-- Botones sociales -->
+			<div class="social-buttons">
+				<a href="https://discord.com/users/innatealloy6" class="social-button discord" target="_blank">
+					<img src="IMAGES/discord.png" alt="Discord" /> Discord
+				</a>
+				<a href="https://www.instagram.com/dcb_pictures?igsh=Z2pkYmVjZzBnNHNu&utm_source=qr" class="social-button instagram" target="_blank">
+					<img src="IMAGES/Instagram.png" alt="Instagram" /> Instagram
+				</a>
+				<a href="https://www.linkedin.com/in/diego-casas-barcenas-80434b272/" class="social-button linkedin" target="_blank">
+					<img src="IMAGES/LinkedIn.webp" alt="LinkedIn" /> LinkedIn
+				</a>
+				<a href="mailto:diego.casas.dcb@gmail.com" class="social-button email" target="_blank">
+					<img src="IMAGES/Gmail.png" alt="Email" /> Correo electrónico
+				</a>
+				<a href="https://wa.me/525516922037" class="social-button whatsapp" target="_blank">
+					<img src="IMAGES/whats.webp" alt="WhatsApp" /> WhatsApp
+				</a>
+			</div>
+		</section>
+		  
+		
+</body>
+</html>

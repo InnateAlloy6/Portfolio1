@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Acceuil </title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<style>
+	  #Projet > section {
+		display: none;
+	  }
+	  #Projet > section.show {
+		display: block;
+	  }
+	</style>
+  </head>
+
+<body style="background-image: url('IMAGES/shiharu1.png'); background-size: cover; background-repeat: no-repeat;">
+	<div id="conteneur">
+		<nav>
+			<img src="IMAGES/IA6.png" alt="Logo">
+			<ul>
+				<li><a href="AccueilES.html">Inicio</a></li>
+				<li>
+					<a href="ExperiencesES.html">Proyectos</a>
+					<ul>
+						<li><a href="projets_academicES.html">Académicos</a></li>
+						<li><a href="projets_proES.html">Profesionales</a></li>
+					</ul>
+				</li>
+				<li><a href="CompetencesES.html">Habilidades</a></li>
+				<li><a href="docs/CV.pdf" download>Descargar CV</a></li>
+				<li>
+					<a href="#"><img src="IMAGES/mx.png" alt="Idioma" style="width: 20px; height: 20px;"> Idioma</a>
+					<ul>
+						<li><a href="Accueil.html"><img src="IMAGES/fr.webp" alt="Français" style="width: 20px; height: 20px;"> Français</a></li>
+			      		<li><a href="AccueilES.html"><img src="IMAGES/mx.png" alt="Español" style="width: 20px; height: 20px;"> Español</a></li>
+			      		<li><a href="AccueilEN.html"><img src="IMAGES/uk.webp" alt="English" style="width: 20px; height: 20px;"> English</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+
+		<section id="Bienvenue">
+			<h1>Presentación</h1>
+			<div style="padding: 10px ;">
+				<p style="text-align: justify;"></p>
+				En esta sección, presento mis competencias clave, así como las diferentes herramientas que domino y utilizo con facilidad. Estas competencias reflejan mi experiencia académica y profesional, así como mi capacidad para adaptarme a diversos entornos técnicos y colaborativos.
+				</p>
+				
+			</div>
+		</section>
+
+		<section class="menu">
+			<div class="menu-container">
+				<div class="menu-card" style="background-image: url('IMAGES/code.jpg');">
+					<div class="menu-content">
+						<h2>Lenguajes de programación</h2>
+						<p>Los lenguajes de programación</p>
+					</div>
+				</div>
+				<div class="menu-card" style="background-image: url('IMAGES/dataviz.jpg');">
+					<div class="menu-content">
+						<h2>Dataviz</h2>
+						<p>Software de visualización de datos</p>
+					</div>
+				</div>
+				<div class="menu-card" style="background-image: url('IMAGES/autres.jpg');">
+					<div class="menu-content">
+						<h2>Otros</h2>
+						<p>Otros programas y competencias</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="Projet">
+			<h1>Competencias</h1>
+			
+
+			<!-- Botones de alternancia -->
+			<button id="btnProjet1" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet1')">programación</button>
+			<button id="btnProjet2" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet2')">Dataviz</button>
+			<button id="btnProjet3" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet3')">Otros</button>
+			<section id="Projet1">
+				<h2>Lenguajes de programación</h2>
+				<div style="padding: 10px ;">
+					<p style="text-align: justify;"></p>
+					Durante mis estudios, así como en mi tiempo libre, he tenido la oportunidad de aprender y profundizar mis conocimientos en diferentes lenguajes de programación.
+					</p>
+				</div>
+				<img src="IMAGES/python.svg" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Python</u></em></p>
+				<img src="IMAGES/sql.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>SQL</u></em></p>
+				<img src="IMAGES/sas.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>sas</u></em></p>
+				<img src="IMAGES/R.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>R</u></em></p>
+			</section>
+	
+			<section id="Projet2">
+			  <h2>Software de dataviz</h2>
+			  	<div style="padding: 10px ;">
+					<p style="text-align: justify;"></p>
+					Durante mis estudios, así como en mi tiempo libre, he tenido la oportunidad de aprender y profundizar mis conocimientos en diferentes herramientas de visualización de datos.
+					</p>
+				</div>
+				<img src="IMAGES/powerbi.jpg" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>PowerBi</u></em></p>
+				<img src="IMAGES/exc.svg" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Excel</u></em></p>
+				<img src="IMAGES/R.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>R</u></em></p>
+			</section>
+	
+			<section id="Projet3">
+			  <h2>Otros herramientas</h2>
+			  	<div style="padding: 10px ;">
+					<p style="text-align: justify;"></p>
+					Durante mis estudios, así como en mi tiempo libre, he tenido la oportunidad de aprender y profundizar mis conocimientos en diferentes herramientas digitales con diversas funciones.
+					</p>
+				</div>
+				<img src="IMAGES/pp.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>PowerPoint</u></em></p>
+				<img src="IMAGES/pj.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Project</u></em></p>
+				<img src="IMAGES/phot.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Photoshop</u></em></p>
+				<img src="IMAGES/prem.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Premiere</u></em></p>
+				<img src="IMAGES/sk.jpg" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Sketch UP</u></em></p>
+				<img src="IMAGES/sw.jpg" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Solid Works</u></em></p>
+			</section>
+		  </section>
+
+		
+	
+		<!-- Script to handle toggle with animation -->
+		<script>
+		  function toggleSection(sectionId) {
+			// Get all toggleable sections
+			const toggleableSections = document.querySelectorAll("#Projet > section");
+	
+			// Hide all sections
+			toggleableSections.forEach(section => {
+			  section.classList.remove("show");
+			});
+	
+			// Show the selected section with animation
+			const sectionToShow = document.getElementById(sectionId);
+			if (sectionToShow) {
+			  sectionToShow.classList.add("show");
+			}
+		  }
+		</script>
+		
+		<section class="contact-section">
+			<h2>Contactarme</h2>
+			<p>¡Si quieres enviarme un mensaje, es por aquí!</p>
+		  
+			<!-- Formulario de mensaje -->
+			<form class="contact-form" action="#" method="POST">
+				<div class="form-group">
+					<input type="text" name="name" placeholder="Tu nombre" required />
+				</div>
+				<div class="form-group">
+					<textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+				</div>
+				<button type="submit" class="form-button">Enviar</button>
+			</form>
+		  
+			<!-- Botones sociales -->
+			<div class="social-buttons">
+				<a href="https://discord.com/users/innatealloy6" class="social-button discord" target="_blank">
+					<img src="IMAGES/discord.png" alt="Discord" /> Discord
+				</a>
+				<a href="https://www.instagram.com/dcb_pictures?igsh=Z2pkYmVjZzBnNHNu&utm_source=qr" class="social-button instagram" target="_blank">
+					<img src="IMAGES/Instagram.png" alt="Instagram" /> Instagram
+				</a>
+				<a href="https://www.linkedin.com/in/diego-casas-barcenas-80434b272/" class="social-button linkedin" target="_blank">
+					<img src="IMAGES/LinkedIn.webp" alt="LinkedIn" /> LinkedIn
+				</a>
+				<a href="mailto:diego.casas.dcb@gmail.com" class="social-button email" target="_blank">
+					<img src="IMAGES/Gmail.png" alt="Email" /> Correo electrónico
+				</a>
+				<a href="https://wa.me/525516922037" class="social-button whatsapp" target="_blank">
+					<img src="IMAGES/whats.webp" alt="WhatsApp" /> WhatsApp
+				</a>
+			</div>
+		</section>
+		  
+		
+</body>
+</html>

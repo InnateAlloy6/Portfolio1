@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Acceuil </title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<style>
+	  #Projet > section {
+		display: none;
+	  }
+	  #Projet > section.show {
+		display: block;
+	  }
+	</style>
+  </head>
+
+<body style="background-image: url('IMAGES/shiharu1.png'); background-size: cover; background-repeat: no-repeat;">
+	<div id="conteneur">
+		<nav>
+			<img src="IMAGES/IA6.png" alt="Logo">
+			<ul>
+				<li><a href="AccueilES.html">Inicio</a></li>
+				<li>
+					<a href="ExperiencesES.html">Proyectos</a>
+					<ul>
+						<li><a href="projets_academicES.html">Académicos</a></li>
+						<li><a href="projets_proES.html">Profesionales</a></li>
+					</ul>
+				</li>
+				<li><a href="CompetencesES.html">Habilidades</a></li>
+				<li><a href="docs/CV.pdf" download>Descargar CV</a></li>
+				<li>
+					<a href="#"><img src="IMAGES/mx.webp" alt="Idioma" style="width: 20px; height: 20px;"> Idioma</a>
+					<ul>
+						<li><a href="Accueil.html"><img src="IMAGES/fr.webp" alt="Français" style="width: 20px; height: 20px;"> Français</a></li>
+			      		<li><a href="AccueilES.html"><img src="IMAGES/mx.png" alt="Español" style="width: 20px; height: 20px;"> Español</a></li>
+			      		<li><a href="AccueilEN.html"><img src="IMAGES/uk.webp" alt="English" style="width: 20px; height: 20px;"> English</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<section id="Bienvenue">
+			<h1>Presentación</h1>
+			<div style="padding: 10px ;">
+				<p style="text-align: justify;"></p>
+					Soy un estudiante apasionado por la Ciencia de Datos, actualmente en el segundo año en el IUT París Cité.
+				</p>
+				<p style="text-align: justify;">
+					Mi área de especialización incluye el diseño de herramientas para la toma de decisiones, la creación de paneles de control, así como el análisis e interpretación de datos. 
+					Sobresalgo especialmente en entornos dinámicos y multiculturales, donde la innovación y la colaboración son valores esenciales.
+				</p>
+				<p style="text-align: justify;">
+					Originario de México, busco desarrollarme en entornos donde no solo pueda compartir mis experiencias, 
+					sino también aprender de expertos del sector. Mi objetivo es utilizar los datos para generar un impacto positivo, 
+					tanto a nivel social como ambiental.
+				</p>
+				<p style="text-align: justify;">
+					Estoy abierto a nuevas oportunidades profesionales y a proyectos desafiantes, 
+					donde pueda seguir creciendo y contribuir activamente a iniciativas de alto potencial.
+				</p>
+			</div>
+		</section>
+
+		<section class="menu">
+			<div class="menu-container">
+				<a href="parcoursES.html" class="menu-card" style="background-image: url('IMAGES/test1.webp');">
+					<div class="menu-content">
+						<h2>Trayectoria</h2>
+						<p>Mi trayectoria</p>
+					</div>
+				</a>
+				<a href="certificatsES.html" class="menu-card" style="background-image: url('IMAGES/test4.jpg');">
+					<div class="menu-content">
+						<h2>Certificados</h2>
+						<p>Mis diplomas y calificaciones</p>
+					</div>
+				</a>
+				<a href="personnelES.html" class="menu-card" style="background-image: url('IMAGES/test2.webp');">
+					<div class="menu-content">
+						<h2>Personal</h2>
+						<p>Mis proyectos personales</p>
+					</div>
+				</a>
+			</div>
+		</section>
+		
+
+		<section id="Moi">
+			<h1>Un poco sobre mí</h1>
+			<p>
+				<p style="text-align: justify;"></p>
+					Nací en México en 2002 y realicé toda mi educación en el sistema francés, lo que me ofreció una rica educación bicultural. Desde los 7 años, descubrí mi pasión por construir con Legos, una actividad que nutrió mi creatividad y mi interés por las estructuras y los sistemas. A los 12 años, esta pasión evolucionó hacia el mundo virtual, donde comencé a interesarme por las tecnologías y su potencial infinito.
+				</p>
+				<p style="text-align: justify;">
+					Tras una pausa en mi trayectoria educativa debido a la pandemia, decidí mudarme a Francia para continuar mis estudios superiores. Durante mi experiencia profesional en Communica, descubrí un campo que me inspira profundamente: la gestión y el análisis de datos.
+				</p>
+				<p style="text-align: justify;">
+					Actualmente, me apasiona el mundo de los datos. Me dedico activamente al aprendizaje de sus aplicaciones profesionales y busco profundizar mis habilidades para contribuir a proyectos innovadores y estratégicos en este campo en constante evolución.
+				</p>
+			</p>
+			<br>
+		</section>
+
+		
+		
+		<section class="contact-section">
+			<h2>Me contacter</h2>
+			<p>Si vous voulez m'envoyer un message, c'est par ici!</p>
+		  
+			<!-- Message Form -->
+			<form class="contact-form" action="#" method="POST">
+			  <div class="form-group">
+				<input type="text" name="name" placeholder="Votre nom" required />
+			  </div>
+			  <div class="form-group">
+				<textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+			  </div>
+			  <button type="submit" class="form-button">Envoyer</button>
+			</form>
+		  
+			<!-- Social Buttons -->
+			<div class="social-buttons">
+				<a href="https://discord.com/users/innatealloy6" class="social-button discord" target="_blank">
+				  <img src="IMAGES/discord.png" alt="Discord" /> Discord
+				</a>
+				<a href="https://www.instagram.com/dcb_pictures?igsh=Z2pkYmVjZzBnNHNu&utm_source=qr" class="social-button instagram" target="_blank">
+				  <img src="IMAGES/Instagram.png" alt="Instagram" /> Instagram
+				</a>
+				<a href="https://www.linkedin.com/in/diego-casas-barcenas-80434b272/" class="social-button linkedin" target="_blank">
+				  <img src="IMAGES/LinkedIn.webp" alt="LinkedIn" /> LinkedIn
+				</a>
+				<a href="mailto:diego.casas.dcb@gmail.com" class="social-button email" target="_blank">
+				  <img src="IMAGES/Gmail.png" alt="Email" /> Email
+				</a>
+				<a href="https://wa.me/525516922037" class="social-button whatsapp" target="_blank">
+					<img src="IMAGES/whats.webp" alt="WhatsApp" /> WhatsApp
+				</a>
+			</div>
+		</section>
+		  
+		
+</body>
+</html>
