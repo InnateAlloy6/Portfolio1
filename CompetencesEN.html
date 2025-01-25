@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Home </title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<style>
+	  #Projet > section {
+		display: none;
+	  }
+	  #Projet > section.show {
+		display: block;
+	  }
+	</style>
+  </head>
+
+<body style="background-image: url('IMAGES/shiharu1.png'); background-size: cover; background-repeat: no-repeat;">
+	<div id="conteneur">
+		<nav>
+			<img src="IMAGES/IA6.png" alt="Logo">
+			<ul>
+			  <li><a href="AccueilEN.html">Home</a></li>
+			  <li>
+				<a href="ExperiencesEN.html">Projects</a>
+				<ul>
+				  <li><a href="projets_academicEN.html">Academic</a></li>
+				  <li><a href="projets_proEN.html">Professional</a></li>
+				</ul>
+			  </li>
+			  <li><a href="CompetencesEN.html">Skills</a></li>
+	  
+			  <li><a href="docs/CV.pdf" download>Download CV</a></li>
+			  <li>
+				<a href="#"><img src="IMAGES/uk.webp" alt="Language" style="width: 20px; height: 20px;"> Language</a>
+				<ul>
+				  <li><a href="Accueil.html"><img src="IMAGES/fr.webp" alt="Français" style="width: 20px; height: 20px;"> Français</a></li>
+						<li><a href="AccueilES.html"><img src="IMAGES/mx.png" alt="Español" style="width: 20px; height: 20px;"> Español</a></li>
+						<li><a href="AccueilEN.html"><img src="IMAGES/uk.webp" alt="English" style="width: 20px; height: 20px;"> English</a></li>
+				</ul>
+			  </li>
+			</ul>
+		  </nav>
+		<section id="Bienvenue">
+			<h1>Introduction</h1>
+			<div style="padding: 10px ;">
+				<p style="text-align: justify;"></p>
+				In this section, I present my key skills as well as the various tools I master and use with ease. These skills reflect my academic and professional experience, as well as my ability to adapt to diverse technical and collaborative environments.
+				</p>
+				
+			</div>
+		</section>
+
+		<section class="menu">
+			<div class="menu-container">
+				<div class="menu-card" style="background-image: url('IMAGES/code.jpg');">
+					<div class="menu-content">
+						<h2>Programming Languages</h2>
+						<p>Programming Languages</p>
+					</div>
+				</div>
+				<div class="menu-card" style="background-image: url('IMAGES/dataviz.jpg');">
+					<div class="menu-content">
+						<h2>Data Visualization</h2>
+						<p>Data Visualization Tools</p>
+					</div>
+				</div>
+				<div class="menu-card" style="background-image: url('IMAGES/autres.jpg');">
+					<div class="menu-content">
+						<h2>Other Tools</h2>
+						<p>Other Software and Skills</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="Projet">
+			<h1>Skills</h1>
+			
+
+			<!-- Toggle buttons -->
+			<button id="btnProjet1" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet1')">Programming</button>
+			<button id="btnProjet2" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet2')">Data Visualization</button>
+			<button id="btnProjet3" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet3')">Other Tools</button>
+			<section id="Projet1">
+				<h2>Programming Languages</h2>
+				<div style="padding: 10px ;">
+					<p style="text-align: justify;"></p>
+					During my studies and my free time, I had the opportunity to learn and deepen my knowledge of various programming languages.
+					</p>
+				</div>
+				<img src="IMAGES/python.svg" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Python</u></em></p>
+				<img src="IMAGES/sql.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>SQL</u></em></p>
+				<img src="IMAGES/sas.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>SAS</u></em></p>
+				<img src="IMAGES/R.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>R</u></em></p>
+			</section>
+	
+			<section id="Projet2">
+			  <h2>Data Visualization Tools</h2>
+			  	<div style="padding: 10px ;">
+					<p style="text-align: justify;"></p>
+					During my studies and my free time, I had the opportunity to learn and deepen my knowledge of various data visualization tools.
+					</p>
+				</div>
+				<img src="IMAGES/powerbi.jpg" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Power BI</u></em></p>
+				<img src="IMAGES/exc.svg" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Excel</u></em></p>
+				<img src="IMAGES/R.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>R</u></em></p>
+			</section>
+	
+			<section id="Projet3">
+			  <h2>Other Tools</h2>
+			  	<div style="padding: 10px ;">
+					<p style="text-align: justify;"></p>
+					During my studies and my free time, I had the opportunity to learn and deepen my knowledge of various digital tools with different functionalities.
+					</p>
+				</div>
+				<img src="IMAGES/pp.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>PowerPoint</u></em></p>
+				<img src="IMAGES/pj.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Project</u></em></p>
+				<img src="IMAGES/phot.png" class="card-img-top" alt="...">
+				<p style="text-align: justify;"><em><u>Photoshop</u>
+
+	
+		<!-- Script to handle toggle with animation -->
+		<script>
+		  function toggleSection(sectionId) {
+			// Get all toggleable sections
+			const toggleableSections = document.querySelectorAll("#Projet > section");
+	
+			// Hide all sections
+			toggleableSections.forEach(section => {
+			  section.classList.remove("show");
+			});
+	
+			// Show the selected section with animation
+			const sectionToShow = document.getElementById(sectionId);
+			if (sectionToShow) {
+			  sectionToShow.classList.add("show");
+			}
+		  }
+		</script>
+		
+		<section class="contact-section">
+			<h2>Contact me</h2>
+			<p>If you would like to send me a message, this is the place!</p>
+			
+			<!-- Message Form -->
+			<form class="contact-form" action="#" method="POST">
+			  <div class="form-group">
+				<input type="text" name="name" placeholder="Your name" required />
+			  </div>
+			  <div class="form-group">
+				<textarea name="message" placeholder="Your message" rows="5" required></textarea>
+			  </div>
+			  <button type="submit" class="form-button">Send</button>
+			</form>
+			
+			<!-- Social Buttons -->
+			<div class="social-buttons">
+			  <a href="https://discord.com/users/innatealloy6" class="social-button discord" target="_blank">
+				<img src="IMAGES/discord.png" alt="Discord" /> Discord
+			  </a>
+			  <a href="https://www.instagram.com/dcb_pictures?igsh=Z2pkYmVjZzBnNHNu&utm_source=qr" class="social-button instagram" target="_blank">
+				<img src="IMAGES/Instagram.png" alt="Instagram" /> Instagram
+			  </a>
+			  <a href="https://www.linkedin.com/in/diego-casas-barcenas-80434b272/" class="social-button linkedin" target="_blank">
+				<img src="IMAGES/LinkedIn.webp" alt="LinkedIn" /> LinkedIn
+			  </a>
+			  <a href="mailto:diego.casas.dcb@gmail.com" class="social-button email" target="_blank">
+				<img src="IMAGES/Gmail.png" alt="Email" /> Email
+			  </a>
+			  <a href="https://wa.me/525516922037" class="social-button whatsapp" target="_blank">
+				<img src="IMAGES/whats.webp" alt="WhatsApp" /> WhatsApp
+			  </a>
+			</div>
+		  </section>
+			
+		  
+</body>
+</html>
