@@ -78,9 +78,58 @@
 			
 
 			<!-- Toggle buttons -->
+			<button id="btnProjet0" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet0')">Mes compétences</button>
 			<button id="btnProjet1" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet1')">programation</button>
 			<button id="btnProjet2" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet2')">Dataviz</button>
 			<button id="btnProjet3" type="button" style="background-color: black; color: white; border: none; padding: 10px 20px; margin: 5px; cursor: pointer;" onclick="toggleSection('Projet3')">Autres</button>
+			
+			<section id="Projet0">
+				<h2>Compétences</h2>
+				<div style="padding: 10px ;">
+					<p>
+						 Les compétences a maitrisér dans le cadre du BUT Sciences des Donnees se divisent en 4 blocs principaux, Traiter, Analyser, Valoriser et Developer.
+					</p>
+				</div>
+
+				<div>
+					<section id="card-container">
+						<div class="card" style="width: 18rem;">
+							<img src="IMAGES/analyse.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Analyse et Exploitation de données </h5>
+								<p class="card-text">Capacité d'analyser et d'extraire des informations pertinentes des ensembles de données.</p>
+								<a href="IMAGES/competences.png" class="btn btn-primary">Compétences</a>
+							</div>
+						</div>
+						<div class="card" style="width: 18rem;">
+							<img src="IMAGES/visualisation.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Reporting et Visualisation de données</h5>
+								<p class="card-text">Compétence à produire des rapports et des visualisations pour faciliter la compréhension des données.</p>
+								<a href="IMAGES/competences.png" class="btn btn-primary">Compétences</a>
+							</div>
+						</div>
+						<div class="card" style="width: 18rem;">
+							<img src="IMAGES/traitement.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Traitement de données d'enquêtes et sondages</h5>
+								<p class="card-text">Expérience dans la collecte et le nettoyage des données issues d'enquêtes et de sondages.</p>
+								<a href="IMAGES/competences.png" class="btn btn-primary">Compétences</a>
+							</div>
+						</div>
+						<div class="card" style="width: 18rem;">
+							<img src="IMAGES/basedonnees.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Requêtage, gestion, structuration et traitement de base de données</h5>
+								<p class="card-text">Savoir-faire en matière de la conception, de la gestion et de la maintenance de bases de données.</p>
+								<a href="IMAGES/competences.png" class="btn btn-primary">Compétences</a>
+							</div>
+						</div>
+					</section>
+				</div>
+				
+			</section>
+			
 			<section id="Projet1">
 				<h2>Langages de programmation</h2>
 				<div style="padding: 10px ;">
@@ -133,8 +182,8 @@
 				<img src="IMAGES/sw.jpg" class="card-img-top" alt="...">
 				<p style="text-align: justify;"><em><u>Solid Works</u></em></p>
 			</section>
-		  </section>
-		</div>
+		</section>
+		
 	
 		<!-- Script to handle toggle with animation -->
 		<script>
