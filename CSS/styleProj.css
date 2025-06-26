@@ -366,6 +366,82 @@ ul li {
 
 
 
+
+.car {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* taille max du carrousel */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.car-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.car-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.car-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    max-height: 400px;
+}
+
+.car-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.car-control.prev {
+    left: 0;
+}
+
+.car-control.next {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	/* Contact Section Styles */
 .contact-section {
 	background-color: black;
