@@ -123,25 +123,25 @@
 		<div class="carousel">
 			<div class="carousel-track">
 				<div class="carousel-slide current-slide">
-					<img src="IMAGES/SASp1.png" alt="Slide 1" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
+					<img src="images/SASp1.png" alt="Slide 1" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
 				</div>
 				<div class="carousel-slide">
-					<img src="IMAGES/SASp2.png" alt="Slide 2" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
+					<img src="images/SASp2.png" alt="Slide 2" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
 				</div>
 				<div class="carousel-slide">
-					<img src="IMAGES/EXLp1.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
+					<img src="images/EXLp1.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
 				</div>
 				<div class="carousel-slide">
-					<img src="IMAGES/EXLp2.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
+					<img src="images/EXLp2.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
 				</div>
 				<div class="carousel-slide">
-					<img src="IMAGES/EXLp3.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
+					<img src="images/EXLp3.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
 				</div>
 				<div class="carousel-slide">
-					<img src="IMAGES/POWBp1.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
+					<img src="images/POWBp1.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
 				</div>
 				<div class="carousel-slide">
-					<img src="IMAGES/POWBp2.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
+					<img src="images/POWBp2.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
 				</div>
 			</div>
 			<button class="carousel-button prev" aria-label="Previous Slide">&lt;</button>
@@ -291,7 +291,7 @@
 			</div>
 		</section>
 
-		<script>
+				<script>
 			document.addEventListener('DOMContentLoaded', function() {
 				const carouselProjet2 = document.querySelector('#carouselProjet2 .carousel-inner');
 				const itemsProjet2 = document.querySelectorAll('#carouselProjet2 .carousel-item');
@@ -317,12 +317,110 @@
 
 
 
+		<section id="moi3">
+			<div class="card">
+				<h1 class="title">SAE Investigations Project</h1>
+			</div>
 
-		<section class="contact-section">
+			<!-- Context Section -->
+			<div class="card">
+				<h2>Context</h2>
+				<p style="text-align: justify;">
+					As part of a survey conducted at the IUT Paris Rives de Seine, we studied the uses and representations of artificial intelligence according to the status of IUT members. This study is part of a context of the rise of AI in higher education.
+				</p>
+				<p style="text-align: justify;">
+					The survey was based on an online questionnaire distributed between January 12 and 17, 2024. Of the 860 responses, 626 were usable [560 students and 66 teachers]. The data were analyzed using Excel and PowerPoint.
+				</p>
+			</div>
+
+			<!-- Variables Section -->
+			<div class="card">
+				<h2>Variables studied</h2>
+				<ul>
+					<li>Respondent status [student, teacher, etc.]</li>
+					<li>Department</li>
+					<li>Opinions and perceptions of AI</li>
+					<li>Type of AI used</li>
+					<li>Context of use</li>
+				</ul>
+			</div>
+
+			<!-- Analyses Section -->
+			<div class="card">
+				<h2>Analyses carried out</h2>
+				<ul>
+					<li>Cross-sectional studies of statuses and uses</li>
+					<li>Cross-sectional studies of departments and perceptions</li>
+					<li>Statistical tests [notably the Chi-square test to verify the independence of variables]</li>
+				</ul>
+			</div>
+
+			<!-- Conclusions Section -->
+			<div class="card">
+				<h2>Conclusions</h2>
+				<ul>
+					<li>Significant differences in AI usage by status</li>
+					<li>A more positive perception among some departments</li>
+					<li>Recurring fears related to the reliability and ethics of AI</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="projet3">
+			<div class="car" id="carProjet3">
+				<div class="car-inner" id="carInner3">
+					<div class="car-item active">
+						<img src="IMAGES/Enquete1.png" alt="Enquête Image 1">
+					</div>
+					<div class="car-item">
+						<img src="IMAGES/Enquete2.png" alt="Enquête Image 2">
+					</div>
+					<div class="car-item">
+						<img src="IMAGES/Enquete3.png" alt="Enquête Image 3">
+					</div>
+				</div>
+				<button class="car-control prev" id="prev3">‹</button>
+				<button class="car-control next" id="next3">›</button>
+			</div>
+		</section>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const inner = document.getElementById('carInner3');
+				const items = document.querySelectorAll('#carInner3 .car-item');
+				const prevBtn = document.getElementById('prev3');
+				const nextBtn = document.getElementById('next3');
+				let currentIndex = 0;
+
+				function updateCar() {
+					inner.style.transform = `translateX(-${currentIndex * 100}%)`;
+				}
+
+				prevBtn.addEventListener('click', () => {
+					currentIndex = (currentIndex - 1 + items.length) % items.length;
+					updateCar();
+				});
+
+				nextBtn.addEventListener('click', () => {
+					currentIndex = (currentIndex + 1) % items.length;
+					updateCar();
+				});
+			});
+		</script>
+
+
+
+
+
+
+
+</body>
+		
+<section class="contact-section">
 			<h2>Contact me</h2>
 			<p>If you would like to send me a message, this is the place!</p>
-			
-			<!-- Message Form -->
+				
+				<!-- Message Form -->
 			<form class="contact-form" action="#" method="POST">
 			<div class="form-group">
 				<input type="text" name="name" placeholder="Your name" required />
@@ -332,8 +430,8 @@
 			</div>
 				<button type="submit" class="form-button">Send</button>
 			</form>
-			
-			<!-- Social Buttons -->
+				
+				<!-- Social Buttons -->
 			<div class="social-buttons">
 				<a href="https://discord.com/users/innatealloy6" class="social-button discord" target="_blank">
 					<img src="IMAGES/discord.png" alt="Discord" /> Discord
@@ -351,8 +449,7 @@
 					<img src="IMAGES/whats.webp" alt="WhatsApp" /> WhatsApp
 				</a>
 			</div>
-	</section>
-	
-  
-</body>
+</section>
+		  
+		
 </html>
