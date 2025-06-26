@@ -115,7 +115,7 @@
 				</ul>
 			  </div>
 			</div>
-		  </section>
+		</section>
 		  
 
 
@@ -123,25 +123,25 @@
 		<div class="carousel">
 			<div class="carousel-track">
 				<div class="carousel-slide current-slide">
-					<img src="IMAGES/SASp1.png" alt="Slide 1" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
+					<img src="images/SASp1.png" alt="Slide 1" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
 				</div>
 				<div class="carousel-slide">
-					<img src="IMAGES/SASp2.png" alt="Slide 2" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
+					<img src="images/SASp2.png" alt="Slide 2" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
 				</div>
 				<div class="carousel-slide">
-					<img src="IMAGES/EXLp1.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
+					<img src="images/EXLp1.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
 				</div>
 				<div class="carousel-slide">
-					<img src="IMAGES/EXLp2.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
+					<img src="images/EXLp2.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
 				</div>
 				<div class="carousel-slide">
-					<img src="IMAGES/EXLp3.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
+					<img src="images/EXLp3.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
 				</div>
 				<div class="carousel-slide">
-					<img src="IMAGES/POWBp1.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
+					<img src="images/POWBp1.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
 				</div>
 				<div class="carousel-slide">
-					<img src="IMAGES/POWBp2.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
+					<img src="images/POWBp2.png" alt="Slide 3" loading="lazy" style="aspect-ratio: 16/9; width: 100%;" />
 				</div>
 			</div>
 			<button class="carousel-button prev" aria-label="Previous Slide">&lt;</button>
@@ -316,11 +316,106 @@
 
 
 
+		<section id="moi3">
+			<div class="card">
+				<h1 class="title">Projet SAE Enquêtes</h1>
+			</div>
+
+			<!-- Context Section -->
+			<div class="card">
+				<h2>Contexte</h2>
+				<p style="text-align: justify;">
+					Dans le cadre d'une enquête menée à l'IUT de Paris Rives de Seine, nous avons étudié les usages et représentations de l'intelligence artificielle selon le statut des membres de l'IUT. Cette étude s’inscrit dans un contexte de montée en puissance de l’IA dans l’enseignement supérieur.
+				</p>
+				<p style="text-align: justify;">
+					L’enquête s’est appuyée sur un questionnaire en ligne diffusé entre le 12 et le 17 janvier 2024. Sur 860 réponses, 626 étaient exploitables [560 étudiants et 66 enseignants]. Les données ont été analysées via Excel et PowerPoint.
+				</p>
+			</div>
+
+			<!-- Variables Section -->
+			<div class="card">
+				<h2>Variables étudiées</h2>
+				<ul>
+					<li>Statut des répondants [étudiant, enseignant, etc.]</li>
+					<li>Département d'appartenance</li>
+					<li>Opinions et perceptions sur l’IA</li>
+					<li>Type d’IA utilisée</li>
+					<li>Contexte d’utilisation</li>
+				</ul>
+			</div>
+
+			<!-- Analyses Section -->
+			<div class="card">
+				<h2>Analyses réalisées</h2>
+				<ul>
+					<li>Études croisées entre les statuts et les usages</li>
+					<li>Études croisées entre les départements et les perceptions</li>
+					<li>Tests statistiques [notamment le test du Chi² pour vérifier l’indépendance des variables]</li>
+				</ul>
+			</div>
+
+			<!-- Conclusions Section -->
+			<div class="card">
+				<h2>Conclusions</h2>
+				<ul>
+					<li>Des différences significatives d’usage de l’IA selon le statut</li>
+					<li>Une perception plus positive chez certains départements</li>
+					<li>Des craintes récurrentes liées à la fiabilité et à l’éthique de l’IA</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="projet3">
+			<div class="car" id="carProjet3">
+				<div class="car-inner" id="carInner3">
+					<div class="car-item active">
+						<img src="IMAGES/Enquete1.png" alt="Enquête Image 1">
+					</div>
+					<div class="car-item">
+						<img src="IMAGES/Enquete2.png" alt="Enquête Image 2">
+					</div>
+					<div class="car-item">
+						<img src="IMAGES/Enquete3.png" alt="Enquête Image 3">
+					</div>
+				</div>
+				<button class="car-control prev" id="prev3">‹</button>
+				<button class="car-control next" id="next3">›</button>
+			</div>
+		</section>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const inner = document.getElementById('carInner3');
+				const items = document.querySelectorAll('#carInner3 .car-item');
+				const prevBtn = document.getElementById('prev3');
+				const nextBtn = document.getElementById('next3');
+				let currentIndex = 0;
+
+				function updateCar() {
+					inner.style.transform = `translateX(-${currentIndex * 100}%)`;
+				}
+
+				prevBtn.addEventListener('click', () => {
+					currentIndex = (currentIndex - 1 + items.length) % items.length;
+					updateCar();
+				});
+
+				nextBtn.addEventListener('click', () => {
+					currentIndex = (currentIndex + 1) % items.length;
+					updateCar();
+				});
+			});
+		</script>
 
 
 
+
+
+
+
+</body>
 		
-		<section class="contact-section">
+<section class="contact-section">
 			<h2>Me contacter</h2>
 			<p>Si vous voulez m'envoyer un message, c'est par ici!</p>
 		  
@@ -353,8 +448,7 @@
 					<img src="IMAGES/whats.webp" alt="WhatsApp" /> WhatsApp
 				</a>
 			</div>
-		  </section>
+</section>
 		  
 		
-</body>
 </html>
